@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(assets/img/try1.jpg);
+  background-size: cover;
+}
+
+.dashboard {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #646d38;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(assets/img/about.jpg);
+  background-size: cover;
+  border: 2px solid white;
+  
+}
+
+h1 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-section {
+  width: 48%; /* Adjust the width to fit two sections */
+}
+
+.table-section h2 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tables .table {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.table:hover {
+  transform: translateY(-5px);
+}
+
+.table h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.btn-change-status {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-change-status:hover {
+  background-color: #0056b3;
+}
+
+/* Existing styles remain unchanged */
+
+.dashboard {
+  display: flex;
+  position: relative;
+}
+
+.bookings-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+}
+
+.bookings {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%; /* Adjust width as needed */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.booking {
+  border-bottom: 1px solid #ccc; /* Add border between bookings */
+  padding-bottom: 10px; /* Add padding between bookings */
+  margin-bottom: 10px; /* Add margin between bookings */
+}
+
+.tables-for-two,
+.tables-for-four {
+  margin-bottom: 10px; /* Reduced margin between table sections */
+}
+
+.tables-for-two h2,
+.tables-for-four h2,
+.tables-for-eight h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.table {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px; /* Reduced margin between tables */
+}
+
+.change-status-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-status-btn:hover {
+  background-color: #0056b3;
+}
