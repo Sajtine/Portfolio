@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    tools:context=".Home">
+
+    <!-- Header -->
+    <FrameLayout
+        android:id="@+id/top_nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="@id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Title Text for Climate Section -->
+
+    <!-- Weather Section (Horizontal Scrolling) -->
+
+
+    <TextView
+        android:id="@+id/weatherReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:letterSpacing="0.02"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:drawableEnd="@drawable/arrow_forward"
+        android:drawablePadding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/weather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_nav_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <HorizontalScrollView
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_nav_container">
+
+        <LinearLayout
+            android:id="@+id/weatherContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Weather Cards will be added here dynamically -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/recommended_crops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Crops"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:letterSpacing="0.02"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/weather"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/recommended_crops"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/cropContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <!-- Footer Layout -->
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/footer2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/navigation_bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:src="@drawable/home1" />
+
+        <!-- Location Icon -->
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:src="@drawable/location_logo" />
+
+        <!-- Settings Icon -->
+        <ImageView
+            android:id="@+id/user_profile"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:contentDescription="Cart"
+            android:src="@drawable/profile2" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/navigation_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    tools:context=".Market_Location">
+
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksandmeduim"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintVertical_bias="0.048" />
+
+
+    <TextView
+        android:id="@+id/farmersLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintVertical_bias="0.135" />
+
+
+    <TextView
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/menu"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/quicksandregular"
+        android:text="Edit Personal Details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/checkRequestsButton"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/checkRequestsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/shade1_green"
+        android:text="Check Requests"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/farmersLocation"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/log_out"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/quicksandregular"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/textGuidline"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundcorners_reg"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_bg"
+        app:layout_constraintBottom_toBottomOf="@id/profile_bg4"
+        app:layout_constraintEnd_toEndOf="@id/profile_bg2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/profile_bg1"
+        app:layout_constraintTop_toTopOf="@id/profile_bg3"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/image1"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/profile4"
+        app:layout_constraintEnd_toEndOf="@id/profile2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/profile1"
+        app:layout_constraintTop_toTopOf="@id/profile3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/frag_container"-->
+    <!--        android:layout_width="350dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/footerLayout"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.491"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.619" />-->
+
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/footer2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/navigation_bottom">
+
+        <!-- Home Icon -->
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:src="@drawable/home" />
+
+        <!-- Location Icon -->
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:src="@drawable/location_logo" />
+
+        <!-- Settings Icon -->
+        <ImageView
+            android:id="@+id/user_profile"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:contentDescription="Cart"
+            android:src="@drawable/user_profile" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_bg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_bg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_bg4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/navigation_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
