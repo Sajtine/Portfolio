@@ -9,3 +9,4 @@ Tool Used
 * Bootstrap for the design
 * VSCode
 * Javascript
+* MySQL
