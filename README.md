@@ -9,7 +9,6 @@ AgriLink is a mobile application developed to help farmers overcome common agric
 - Crop recommendations based on weather conditions
 - Direct farmer-to-market/vendor connections
 - Built-in chat system for faster communication
-- Improved accessibility to agricultural information and market opportunities
 
 ---
 
@@ -42,9 +41,9 @@ Attendance App is a desktop application built using Java GUI that simplifies stu
 
 ## Technologies Used
 
-- **AgriLink App:** Android Studio, Java, API Integration
-- **Book & Bite:** HTML, CSS, JavaScript, PHP, MySQL
-- **Attendance App:** Java GUI
+- **AgriLink App:** Android Studio, Java, API Integration, Firebase
+- **Book & Bite:** HTML, CSS, JavaScript, PHP, MySQL, VSCode
+- **Attendance App:** Java GUI, Eclipse IDE, JDBC (Database Connection)
 
 ---
 
