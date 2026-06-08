@@ -1,8 +1,53 @@
-* AgriLink App is a mobile app developed to address farmers problems including their reliance on middlemen. 
-It helps farmers connect directly with local markets and vendors, allowing them to sell their products at fair prices.
-And it also includes features such as realtime weather updates, crop recommendations and chat system for faster communications.
+# Projects Portfolio
 
-* Book & Bite is a website for restaurant addressing the booking of table for customers for hassle free dine in.
-It will feature a advance booking of table for customers. The website also displays the menu of dishes, events they catered and reviews of the customers.
+## AgriLink App
 
-* Attendance App is build with Java GUI for user to have a faster attendance of students and better recording.
+AgriLink is a mobile application developed to help farmers overcome common agricultural challenges, particularly their reliance on middlemen. The app enables farmers to connect directly with local markets and vendors, allowing them to sell their products at fair and competitive prices while improving market accessibility.
+
+### Features
+- Real-time weather updates
+- Crop recommendations based on weather conditions
+- Direct farmer-to-market/vendor connections
+- Built-in chat system for faster communication
+- Improved accessibility to agricultural information and market opportunities
+
+---
+
+## Book & Bite
+
+Book & Bite is a restaurant reservation website designed to provide customers with a convenient and hassle-free dining experience. The platform allows users to reserve tables in advance, explore restaurant offerings, and stay informed about upcoming events.
+
+### Features
+- Online table reservation system
+- Advance booking for hassle-free dining
+- Digital menu display
+- Event and catering showcase
+- Customer reviews and feedback section
+- User-friendly interface
+
+---
+
+## Attendance App
+
+Attendance App is a desktop application built using Java GUI that simplifies student attendance management. It provides an efficient way to record, organize, and monitor attendance records, reducing manual work and improving accuracy.
+
+### Features
+- Fast attendance recording
+- Student attendance tracking
+- Organized attendance management
+- Easy record retrieval and monitoring
+- Simple and intuitive user interface
+
+---
+
+## Technologies Used
+
+- **AgriLink App:** Android Studio, Java, API Integration
+- **Book & Bite:** HTML, CSS, JavaScript, PHP, MySQL
+- **Attendance App:** Java GUI
+
+---
+
+## Author
+
+Developed by **Justine Gomez**
